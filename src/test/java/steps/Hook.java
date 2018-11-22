@@ -27,8 +27,8 @@ public class Hook extends BaseUtil{
 		
 
         System.setProperty("webdriver.gecko.driver", "D:\\TestNG\\geckodriver-v0.23.0-win64\\geckodriver.exe");
-        base.Driver = new ChromeDriver();
-		
+        base.Driver = new FirefoxDriver();
+		WebDriver driver;
         System.out.println("Open : Portal");
 		
 		driver.get("https://portal.actcorp.in");
