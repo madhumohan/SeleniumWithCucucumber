@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
- * Created by Karthik on 10/17/2016.
+ * Created by Madhu on 22/11/2018.
  */
 public class Hook extends BaseUtil{
 
@@ -24,10 +24,11 @@ public class Hook extends BaseUtil{
 
         System.out.println("Opening the browser : Firefox");
 		
-		WebDriver driver = new FirefoxDriver();
+		
 
         System.setProperty("webdriver.gecko.driver", "D:\\TestNG\\geckodriver-v0.23.0-win64\\geckodriver.exe");
-        
+        base.Driver = new ChromeDriver();
+		
         System.out.println("Open : Portal");
 		
 		driver.get("https://portal.actcorp.in");
